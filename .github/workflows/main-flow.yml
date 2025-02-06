@@ -42,7 +42,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Say Hello
-        run: |
-         echo hello motherfucker
-         echo goodbye
+      - name: Run Unit tests
+        run: pytest test_example.py
